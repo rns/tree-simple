@@ -1,4 +1,3 @@
-
 package Tree::Simple;
 
 use 5.006;
@@ -1054,7 +1053,7 @@ nor what made sense, so I have now revised the model to handle things in what
 I feel is a more consistent and sane way. 
 
 Circular references are now managed with the simple idea that the parent makes 
-the descisions for the child. This means that child-to-parent references are 
+the decisions for the child. This means that child-to-parent references are 
 weak, while parent-to-child references are strong. So if a parent is destroyed 
 it will force all it's children to detach from it, however, if a child is 
 destroyed it will not be detached from it's parent.
